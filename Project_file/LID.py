@@ -19,7 +19,7 @@ class Admin(QtGui.QMainWindow):
 		super(Admin, self).__init__()
 		self.setGeometry(50, 50, 699, 538)
 		self.setWindowTitle("Admin page")
-		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/jeevan/29-2-16/silver4.jpg');}")
+		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/pravin/29-2-16/silver4.jpg');}")
 		extractAction = QtGui.QAction("Exit",self)
 		extractAction.setShortcut("Ctrl+Q")
 		extractAction.setStatusTip('Leave The App')
@@ -74,8 +74,8 @@ class Admin(QtGui.QMainWindow):
 	
 	
 	def deleteModels(self):
-		shutil.rmtree("/home/jeevan/29-2-16/data_new/randomForest")
-		#os.remove("/home/jeevan/29-2-16/data_new/randomForest")
+		shutil.rmtree("/home/pravin/29-2-16/data_new/randomForest")
+		#os.remove("/home/pravin/29-2-16/data_new/randomForest")
 		print("\nold Model deleted successfully..!")
 	
 	def logOut(self):
@@ -92,38 +92,38 @@ class Admin(QtGui.QMainWindow):
 	
 
 	def trainModule(self):
-		if not os.path.exists("/home/jeevan/29-2-16/data_new/randomForest"):
-			os.makedirs("/home/jeevan/29-2-16/data_new/randomForest")
+		if not os.path.exists("/home/pravin/29-2-16/data_new/randomForest"):
+			os.makedirs("/home/pravin/29-2-16/data_new/randomForest")
 		print("\n Training under process..!")
 			#message box or dialogbox coding
 	
 		# accessing files marathi
-		marathi_files = glob.glob('/home/jeevan/29-2-16/data_new/Marathi/*.txt')
+		marathi_files = glob.glob('/home/pravin/29-2-16/data_new/Marathi/*.txt')
 		data_marathi = self.load_data(marathi_files)
 
 		# accessing files hindi
-		hindi_files = glob.glob('/home/jeevan/29-2-16/data_new/Hindi/*.txt')
+		hindi_files = glob.glob('/home/pravin/29-2-16/data_new/Hindi/*.txt')
 		data_hindi = self.load_data(hindi_files)
 
 		# accessing files bodo
-#		bodo_files = glob.glob('/home/jeevan/29-2-16/data_new/Bodo/*.txt')
+#		bodo_files = glob.glob('/home/pravin/29-2-16/data_new/Bodo/*.txt')
 #		data_bodo = self.load_data(bodo_files)
 
 		# accessing files nepali
-		nepali_files = glob.glob('/home/jeevan/29-2-16/data_new/Nepali/*.txt')
+		nepali_files = glob.glob('/home/pravin/29-2-16/data_new/Nepali/*.txt')
 		data_nepali = self.load_data(nepali_files)
 
 		# accessing files konkani
-		konkani_files = glob.glob('/home/jeevan/29-2-16/data_new/Konkani/*.txt')
+		konkani_files = glob.glob('/home/pravin/29-2-16/data_new/Konkani/*.txt')
 		data_konkani = self.load_data(konkani_files)
 
 
 		# accessing files bangla
-		bangla_files = glob.glob('/home/jeevan/29-2-16/data_new/Bangla/*.txt')
+		bangla_files = glob.glob('/home/pravin/29-2-16/data_new/Bangla/*.txt')
 		data_bangla = self.load_data(bangla_files)
 	
 		# accessing files Telugu
-		telugu_files = glob.glob('/home/jeevan/29-2-16/data_new/Telugu/*.txt')
+		telugu_files = glob.glob('/home/pravin/29-2-16/data_new/Telugu/*.txt')
 		data_telugu = self.load_data(telugu_files)
 
 
@@ -187,7 +187,7 @@ class Login(QtGui.QMainWindow):
 		super(Login, self).__init__()
 		self.setGeometry(50, 50, 699, 538)
 		self.setWindowTitle("Login Page")
-		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/jeevan/29-2-16/silver4.jpg');}")
+		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/pravin/29-2-16/silver4.jpg');}")
 
 		extractAction = QtGui.QAction("Exit",self)
 		extractAction.setShortcut("Ctrl+Q")
@@ -295,7 +295,7 @@ class Lid(QtGui.QMainWindow):
 		self.setGeometry(50, 50, 699, 538)
 		self.setWindowTitle("Main Window")
 		self.setWindowIcon(QtGui.QIcon('icon.png'))
-		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/jeevan/29-2-16/silver4.jpg');}")
+		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/pravin/29-2-16/silver4.jpg');}")
 	
 		extractAction = QtGui.QAction("Exit",self)
 		extractAction.setShortcut("Ctrl+Q")

@@ -13,11 +13,11 @@ def tfidf_vectorizer(data):
 
 
 # loading data
-filename = '/home/jeevan/29-2-16/data_new/train_data'
+filename = '/home/pravin/29-2-16/data_new/train_data'
 X_train = load_data(filename)
 
 # loading labels
-labels = '/home/jeevan/29-2-16/data_new/train_labels'
+labels = '/home/pravin/29-2-16/data_new/train_labels'
 y_train = load_data(labels)
 print("loding done successfully...")
 
