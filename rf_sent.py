@@ -56,32 +56,32 @@ def train_perceptron(X, y):
 ##    return nn
 '''
 # accessing files marathi
-marathi_files = glob.glob('/home/pravin/29-2-16/data_new/Marathi/*.txt')
+marathi_files = glob.glob('/home/jeevan/29-2-16/data_new/Marathi/*.txt')
 data_marathi = load_data(marathi_files)
 
 # accessing files hindi
-hindi_files = glob.glob('/home/pravin/29-2-16/data_new/Hindi/*.txt')
+hindi_files = glob.glob('/home/jeevan/29-2-16/data_new/Hindi/*.txt')
 data_hindi = load_data(hindi_files)
 
 # accessing files bodo
-#bodo_files = glob.glob('/home/pravin/29-2-16/data_new/Bodo/*.txt')
+#bodo_files = glob.glob('/home/jeevan/29-2-16/data_new/Bodo/*.txt')
 #data_bodo = load_data(bodo_files)
 
 # accessing files nepali
-nepali_files = glob.glob('/home/pravin/29-2-16/data_new/Nepali/*.txt')
+nepali_files = glob.glob('/home/jeevan/29-2-16/data_new/Nepali/*.txt')
 data_nepali = load_data(nepali_files)
 
 # accessing files konkani
-konkani_files = glob.glob('/home/pravin/29-2-16/data_new/Konkani/*.txt')
+konkani_files = glob.glob('/home/jeevan/29-2-16/data_new/Konkani/*.txt')
 data_konkani = load_data(konkani_files)
 
 
 # accessing files bangla
-bangla_files = glob.glob('/home/pravin/29-2-16/data_new/Bangla/*.txt')
+bangla_files = glob.glob('/home/jeevan/29-2-16/data_new/Bangla/*.txt')
 data_bangla = load_data(bangla_files)
 
 # accessing files Telugu
-telugu_files = glob.glob('/home/pravin/29-2-16/data_new/Telugu/*.txt')
+telugu_files = glob.glob('/home/jeevan/29-2-16/data_new/Telugu/*.txt')
 data_telugu = load_data(telugu_files)
 
 
