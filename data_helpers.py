@@ -6,11 +6,11 @@ def load_data(list_of_files):
     return [line.rstrip() for filename in list_of_files for line in open(filename, encoding = 'UTF-8', errors='ignore')]
 
 # accessing files marathi
-marathi_files = glob.glob('/home/pravin/29-2-16/data_new/Marathi/*.txt')
+marathi_files = glob.glob('/home/jeevan/29-2-16/data_new/Marathi/*.txt')
 data_marathi = load_data(marathi_files)
 
 # accessing files hindi
-hindi_files = glob.glob('/home/pravin/29-2-16/data_new/Hindi/*.txt')
+hindi_files = glob.glob('/home/jeevan/29-2-16/data_new/Hindi/*.txt')
 data_hindi = load_data(hindi_files)
 
 # whole data
@@ -26,11 +26,11 @@ hindi_labels = ['Hindi' for _ in data_hindi]
 y_train = marathi_labels + hindi_labels
 
 # save data train
-outfile_X_train = open('/home/pravin/29-2-16/data_new/train_data', 'w', encoding = 'utf-8')
+outfile_X_train = open('/home/jeevan/29-2-16/data_new/train_data', 'w', encoding = 'utf-8')
 outfile_X_train.write("\n".join(X_train))
 
 # save data labels
-outfile_y_train = open('/home/pravin/29-2-16/data_new/train_labels', 'w', encoding = 'utf-8')
+outfile_y_train = open('/home/jeevan/29-2-16/data_new/train_labels', 'w', encoding = 'utf-8')
 outfile_y_train.write("\n".join(y_train))
 
 print("data loaded...")
