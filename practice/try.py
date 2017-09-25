@@ -1,4 +1,4 @@
-import sys
+nimport sys
 from PyQt4 import QtGui, QtCore
 import glob
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -115,11 +115,11 @@ class Admin(QtGui.QMainWindow):
 		print("\n Training under process..!")
 			#message box or dialogbox coding	
 		# accessing files marathi
-		marathi_files = glob.glob('/home/pravin/29-2-16/data_new/Marathi/*.txt')
+		marathi_files = glob.glob('/home/jeevan/29-2-16/data_new/Marathi/*.txt')
 		data_marathi = self.load_data(marathi_files)
 
 		# accessing files hindi
-		hindi_files = glob.glob('/home/pravin/29-2-16/data_new/Hindi/*.txt')
+		hindi_files = glob.glob('/home/jeevan/29-2-16/data_new/Hindi/*.txt')
 		data_hindi = self.load_data(hindi_files)
 
 		# whole data
@@ -513,15 +513,3 @@ class Lid(QtGui.QMainWindow):
 		
 	
 '''
-
-
-		
-		
-		
-def main():
-	app = QtGui.QApplication(sys.argv)
-	GUI = Lid()
-	sys.exit(app.exec_())
-main()
-
-
