@@ -19,7 +19,7 @@ class Admin(QtGui.QMainWindow):
 		super(Admin, self).__init__()
 		self.setGeometry(50, 50, 699, 538)
 		self.setWindowTitle("Admin page")
-		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/pravin/29-2-16/silver4.jpg');}")
+		self.setStyleSheet("QMainWindow{font-size : 400px; color : blue; background-image: url('/home/jeevan/29-2-16/silver4.jpg');}")
 		extractAction = QtGui.QAction("Exit",self)
 		extractAction.setShortcut("Ctrl+Q")
 		extractAction.setStatusTip('Leave The App')
